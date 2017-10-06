@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="bluetoothtest.jiyun.com.bluetoothtest.MainActivity">
+    <EditText
+        android:id="@+id/blueName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF"
+        android:hint="请输入蓝牙设备名"
+        android:padding="10dp"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="40dp"
+        >
+        <Button
+            android:id="@+id/openBlue"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="打开蓝牙"
+            />
+        <Button
+            android:id="@+id/sousuoBlue"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="连接指定设备"
+            />
+        <Button
+            android:id="@+id/guanBlue"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="关闭蓝牙"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="90dp"
+        android:id="@+id/lin2"
+        >
+
+        <Button
+            android:id="@+id/blueStart"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="开启血压仪"
+            />
+
+        <Button
+            android:id="@+id/blueEnd"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="结束血压仪"
+            />
+        <!--<Button
+            android:id="@+id/blueDian"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="血压信息"
+            />-->
+    </LinearLayout>
+
+    <com.route.test.mybluetooth.view.MyZhu
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/myzhu"
+        android:layout_below="@+id/lin2"
+        />
+
+</RelativeLayout>
